@@ -16,3 +16,13 @@ let sejun:PersonType = {
     name: 'sejun',
     age: 23,
 }
+
+interface PersonItf {
+    name: string;
+    age: number;
+}
+
+let tejin: PersonItf = {
+    name: 'tejin',
+    age: 23,
+}
