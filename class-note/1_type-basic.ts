@@ -1,5 +1,5 @@
 // string 선언
-let str:string = 'hello';
+let str1:string = 'hello';
 
 // 숫자 선언
 let num:number = 10;
