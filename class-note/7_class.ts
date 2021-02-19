@@ -1,6 +1,6 @@
 class PersonTS {
-    private name: string;
-    public age: number;
+    name: string;
+    age: number;
     readonly log: string;
 
     constructor(name:string, age:number, log:string) {
