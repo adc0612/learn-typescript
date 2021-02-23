@@ -66,13 +66,13 @@ type UpdateProduct2 = {
 }
 
 
-// 3. for..in으로 구성
+// 3. Mapped Type으로 구성
 // Javascript에서 배열안 key값들을 접근하는 for..in반복문 같은 것 
 type UpdateProduct3 = {
     [P in 'id' | 'name' | 'price' | 'brand' | 'stock']?: Product[P];
 }
 
-// 4. for..in keyof 이용
+// 4. keyof 이용
 type UpdateProduct4 = {
     [P in keyof Product]?: Product[P];
 }
