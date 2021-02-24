@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "allowJs":true, // JS파일을 Typescript에서 인식해서 그냥 쓰게함
+        "target": "ES5", // tsc로 compile후 TS파일을 JS파일로 변환될 때 원하는 JS버전
+        "outDir": "./built", // tsc로 compile후 변환된 JS파일의 경로 지정
+        "moduleResolution": "node", // 모듈 (검색)해석 방식 설정
+        // 컴파일에 포함될 라이브러리 파일 목록
+        "lib": ["ES2015", "DOM", "DOM.Iterable"] // ES5에서 Promise문법을 이해 못 하기 때문
+    },
+    // 해당 프로젝트 폴더 기준으로 어디에 있는 TS파일을 compile시킬지 결정
+    "include": ["./src/**/*"], // src폴더 밑에 있는 모든 파일들로 설정
+    //  TS파일 compile제외 할 폴더
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
