@@ -6,10 +6,19 @@
 
 0. 자바스크립트 파일에 JSDoc으로 타입 시스템 입히기 (Optional)
 1. 타입스크립트의 기본 환경 구성
-    - [] NPM 초기화 (npm init-y)
-    - [] 타입스크립트 라이브러리 설치 (npm i typescipt -D)
-    - [] 타입스크립트 설정 파일 생성 (tsconfig.json 파일 생성)
-    - [] 자바스크립트 파일을 타입스크립트 파일로 변환하기 (파일 확장자 변경)
+    - [x] NPM 초기화 (npm init-y)
+    - [x] 타입스크립트 라이브러리 설치 (npm i typescipt -D)
+    - [x] 타입스크립트 설정 파일 생성 (tsconfig.json 파일 생성)
+    - [x] 자바스크립트 파일을 타입스크립트 파일로 변환하기 (파일 확장자 변경)
+    - [x] `tsc`명령어로 타입스크립트 compile하기
+2. 명시적인 `any` 선언하기
+    - `tsconfig.json`파일에 `noImplicitAny`값을 `true`로 추가
+
+일단 모든 값을 any로 타입을 선언한다.
+
+값이 한정적으로 정해져있으면 enum생성 후 삽입
+
+DOM타입은 구체적으로 선언
 
 ## 참고 자료
 

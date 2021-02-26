@@ -5,7 +5,8 @@
         "outDir": "./built", // tsc로 compile후 변환된 JS파일의 경로 지정
         "moduleResolution": "node", // 모듈 (검색)해석 방식 설정
         // 컴파일에 포함될 라이브러리 파일 목록
-        "lib": ["ES2015", "DOM", "DOM.Iterable"] // ES5에서 Promise문법을 이해 못 하기 때문
+        "lib": ["ES2015", "DOM", "DOM.Iterable"], // ES5에서 Promise문법을 이해 못 하기 때문
+        "noImplicitAny": true
     },
     // 해당 프로젝트 폴더 기준으로 어디에 있는 TS파일을 compile시킬지 결정
     "include": ["./src/**/*"], // src폴더 밑에 있는 모든 파일들로 설정
