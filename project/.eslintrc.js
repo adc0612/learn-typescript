@@ -30,6 +30,7 @@ module.exports = {
         printWidth: 80, // 한 줄에서 wrap 이 되는 기준의 글자 수를 정한다.
         bracketSpacing: true, // 객체 리터럴의 괄호 사이에 공백을 출력
         arrowParens: 'avoid', // 화살표 함수에서 단일 파라미터에 괄호를 붙일지("always") 말지("avoid")에 대한 여부를 결정한다.
+        endOfLine: 'auto',
       },
     ],
   },

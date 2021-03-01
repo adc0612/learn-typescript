@@ -1,3 +1,13 @@
+// 라이브러리 로딩
+// import 변수명 from '라이브러리 이름';
+// 변수, 함수 import 문법
+// import {} from '파일 상대 경로';
+// axios 로딩
+import axios, { AxiosResponse } from 'axios';
+import * as Chart from 'chart.js';
+// 타입 import
+import { CountrySummaryResponse, CovidSummaryResponse } from './covid/index';
+
 // utils
 function $(selector: string) {
   return document.querySelector(selector);
@@ -37,7 +47,7 @@ let isDeathLoading = false;
 const isRecoveredLoading = false;
 
 // api
-function fetchCovidSummary() {
+function fetchCovidSummary(): Promise<AxiosResponse<CovidSummaryResponse>> {
   const url = 'https://api.covid19api.com/summary';
   return axios.get(url);
 }
@@ -48,7 +58,10 @@ enum CovidStatus {
   Death = 'deaths',
 }
 
-function fetchCountryInfo(countryCode: string, status: CovidStatus) {
+function fetchCountryInfo(
+  countryCode: string,
+  status: CovidStatus
+): Promise<AxiosResponse<CountrySummaryResponse>> {
   // params: confirmed, recovered, deaths
   const url = `https://api.covid19api.com/country/${countryCode}/status/${status}`;
   return axios.get(url);

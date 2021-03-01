@@ -6,7 +6,9 @@
         "moduleResolution": "node", // 모듈 (검색)해석 방식 설정
         // 컴파일에 포함될 라이브러리 파일 목록
         "lib": ["ES2015", "DOM", "DOM.Iterable"], // ES5에서 Promise문법을 이해 못 하기 때문
-        "noImplicitAny": true
+        "noImplicitAny": true,
+        // 타입 선언을 직접 선언할 때 파일을 넣을 폴더 설정
+        "typeRoots": ["./node_modules/@types", "./types"]
     },
     // 해당 프로젝트 폴더 기준으로 어디에 있는 TS파일을 compile시킬지 결정
     "include": ["./src/**/*"], // src폴더 밑에 있는 모든 파일들로 설정

@@ -13,12 +13,12 @@
     - [x] `tsc`명령어로 타입스크립트 compile하기
 2. 명시적인 `any` 선언하기
     - `tsconfig.json`파일에 `noImplicitAny`값을 `true`로 추가
-
-일단 모든 값을 any로 타입을 선언한다.
-
-값이 한정적으로 정해져있으면 enum생성 후 삽입
-
-DOM타입은 구체적으로 선언
+    - 가능한한 구체적인 타입으로 타입 정의
+3. 프로젝트 환경 구성
+    - babel, eslint, prettier 등의 환경 설정
+4. 외부 라이브러리 모듈화
+    - axios 라이브러리 설치 및 load
+    - Chart.js라이브러리 설치 및 load
 
 ## 참고 자료
 
